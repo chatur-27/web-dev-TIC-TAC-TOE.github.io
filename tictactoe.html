@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title> Tic Tac Toe </title>
+		
+		<link rel = "stylesheet" type = "text/css" href = "tictactoe.css">
+		
+		<!-- heading font pacifico -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+		
+		<script type="text/javascript" src= "jquery-3.6.0.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<h1 class="heading"> Tic Tac Toe </h1>
+		
+		<h3> 
+		Choose X or O : 
+			<select id="dropdown">
+				<option id="X"> X </option>
+				<option id="O"> O </option>
+			</select>
+		
+		</h3>
+		
+		
+		<div id="container">
+			<div id="hold">
+				<h3 >Player 1 : <span id="xo1"></span> </h3>
+				<h3 >Player 2 : <span id="xo2"></span> </h3>
+			</div>
+			<table>
+				<tr>
+					<td id="r11" class="topless leftless"> 1 </td>
+					<td id="r12" class="topless"> 2</td>
+					<td id="r13" class="topless rightless">3 </td>
+				</tr>
+				
+				<tr>
+					<td id="r21" class="leftless"> 4</td>
+					<td id="r22" >5 </td>
+					<td id="r23" class="rightless">6 </td>
+				</tr>
+				
+				<tr>
+					<td id="r31" class="bottomless leftless">7 </td>
+					<td id="r32" class="bottomless"> 8</td>
+					<td id="r33" class="bottomless rightless">9 </td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		<div class="clear"></div>
+		<h3 id="result"> Player <span id ="player"> 1</span>'s turn</h3>
+		
+		<button id="again"> Play Again!</button>
+		
+		
+		<script type = "text/javascript" src = "tictactoe.js"></script>
+		
+	</body>
+</html>
